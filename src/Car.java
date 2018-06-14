@@ -10,13 +10,14 @@ public class Car {
 
     public Car(PApplet p, float tempColor, float tempXpos, float tempYpos, float tempXspeed) {
         this.p = p;
-        color = p.color(tempColor);
+        color = tempColor;
         xpos = tempXpos;
         ypos = tempYpos;
         xspeed = tempXspeed;
     }
 
     void display() {
+        p.stroke(255);
         p.fill(color);
         p.rect(xpos, ypos, 20, 10);
     }

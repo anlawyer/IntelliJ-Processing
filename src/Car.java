@@ -8,16 +8,15 @@ public class Car {
     float ypos;
     float xspeed;
 
-    public Car(PApplet p) {
+    public Car(PApplet p, float tempColor, float tempXpos, float tempYpos, float tempXspeed) {
         this.p = p;
-        color = p.color(0);
-        xpos = p.width/2;
-        ypos = p.height/2;
-        xspeed = 1;
+        color = p.color(tempColor);
+        xpos = tempXpos;
+        ypos = tempYpos;
+        xspeed = tempXspeed;
     }
 
     void display() {
-//        p.rectMode(CENTER);
         p.fill(color);
         p.rect(xpos, ypos, 20, 10);
     }

@@ -8,20 +8,25 @@ public class MainApp extends PApplet {
 
     }
 
-    Car myCar;
+    Car carOne;
+    Car carTwo;
 
     public void settings() {
         size(200, 200);
     }
 
     public void setup() {
-        background(255);
-        myCar = new Car(this);
+//        background(255);
+        carOne = new Car(this, color(22), 50, 50, 1);
+        carTwo = new Car(this, color(222), 150, 150, 2);
     }
 
     public void draw() {
-        myCar.display();
-        myCar.drive();
+        background(255);
+        carOne.display();
+        carOne.drive();
+        carTwo.display();
+        carTwo.drive();
     }
 
 }

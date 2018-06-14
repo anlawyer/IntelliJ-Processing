@@ -18,14 +18,16 @@ public class Car {
 
     void display() {
         p.stroke(255);
-        p.fill(color);
+        p.fill(color, 0, 0);
         p.rect(xpos, ypos, 20, 10);
     }
 
     void drive() {
         xpos = xpos + xspeed;
-        if (xpos > p.width) {
+        ypos = ypos + xspeed;
+        if ((xpos > p.width) && (ypos > p.height)){
             xpos = 0;
+            ypos = 0;
         }
     }
 }

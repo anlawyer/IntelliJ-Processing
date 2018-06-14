@@ -17,7 +17,7 @@ public class MainApp extends PApplet {
 
     public void setup() {
 //        background(255);
-        carOne = new Car(this, 22, 50, 50, 1);
+        carOne = new Car(this, 122, 50, 50, 1);
         carTwo = new Car(this, 222, 150, 150, 2);
     }
 

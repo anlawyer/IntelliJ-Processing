@@ -11,17 +11,17 @@ public class MainApp extends PApplet {
     Car myCar;
 
     public void settings() {
-        size(800, 600);
+        size(200, 200);
     }
 
     public void setup() {
-        background(200);
+        background(255);
         myCar = new Car(this);
     }
 
     public void draw() {
-        line(mouseX, mouseY, pmouseX, pmouseY);
-        myCar.doSomething();
+        myCar.display();
+        myCar.drive();
     }
 
 }
